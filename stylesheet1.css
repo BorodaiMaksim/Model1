@@ -1,6 +1,8 @@
 ﻿body
 {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 @font-face {
     src: url(./fonts/GraphikLCG-Regular.ttf) format('truetype');
@@ -11,9 +13,8 @@
     font-family: "fonts-two"
 }
 
-
 .main-header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 90px;
     top: 0px;
@@ -31,16 +32,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 .badge-one::before {
-        position: absolute;
-        top: 36.5px;
-        left: 55px;
-        content: '';
-        width: 24.27px;
-        height: 4.27px;
-        background-color: green;
-        z-index: 3;
+    position: absolute;
+    top: 36.5px;
+    left: 55px;
+    content: '';
+    width: 24.27px;
+    height: 4.27px;
+    background-color: #A4A14A;
+    z-index: 3;
 }
 .badge-one::after {
     position: absolute;
@@ -49,7 +51,7 @@
     content: '';
     width: 24.27px;
     height: 4.27px;
-    background-color: yellow;
+    background-color: #FFC500;
     z-index: 3;
 }
 .badge-two::before {
@@ -101,6 +103,9 @@
     font-family: fonts-two;
     font-size: 26px;
 }
+
+
+
 
 
 .main-text {
@@ -177,4 +182,320 @@
     font-size: 15px;
     line-height: 25px;
 }
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 455px;
+    position: relative;
+    top: 957px;
+    left: 0px;
+    background-color: #FF9C7D;
+}
+.footer-text {
+    position: absolute;
+    top: 108px;
+    left: 415px;
+    width: 720px;
+    height: 120px;
+    font-family: fonts-two;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+}
+.brands {
+    height: 93px;
+    position: absolute;
+    top: 278px;
+    left: 102px;
+    right: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-name {
+    width: 145px;
+    height: 55px;
+    position: relative;
+}
+
+
+.icon-one::before {
+    content: url('./image/Icon-one.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+}
+.s-letter::before {
+    content: url('./image/s.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 27.44px;
+}
+.p-letter::before {
+    content: url('./image/p.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 38.44px;
+}
+.e-letter::before{
+    content: url('./image/e.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 49.44px;
+}
+.c-letter::before {
+    content: url('./image/c.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 60.44px;
+}
+.i-letter::before {
+    content: url('./image/i.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 70.44px;
+}
+.a-letter::before {
+    content: url('./image/a.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 75.44px;
+}
+.l-letter::before {
+    content: url('./image/l.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 91.44px;
+}
+.i-letter::after {
+    content: url('./image/i.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 100.44px;
+}
+.z-letter::before {
+    content: url('./image/z.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 106.44px;
+}
+.e-letter::after {
+    content: url('./image/e.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 118.44px;
+}
+.d-letter::before {
+    content: url('./image/d.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 128.44px;
+}
+
+
+.icon-two {
+    content: url('./image/icon-two.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    height:55px;
+    width: 145px;
+}
+
+
+.icon-three1::before {
+    content: url('./image/icon-three.png');
+    position: absolute;
+    top: 37%;
+    transform: translate(-0px, -50%);
+}
+.icon-three1::after {
+    content: url('./image/icon-three.png');
+    position: absolute;
+    top: 37%;
+    transform: translate(-0px, -50%);
+    left: 9.61px;
+}
+.icon-three2::before {
+    content: url('./image/icon-three.png');
+    position: absolute;
+    top: 37%;
+    transform: translate(-0px, -50%);
+    left: 18.61px;
+}
+.icon-three2::after {
+    content: url('./image/icon-three.png');
+    position: absolute;
+    top: 53%;
+    transform: translate(-0px, -50%);
+    left: 9.61px;
+}
+.t-3-letter::before {
+    content: url('./image/t-3.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 38.61px;
+}
+.i-3-letter::before {
+    content: url('./image/i-3.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 58.61px;
+}
+.d-3-letter::before {
+    content: url('./image/d-3.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 71.61px;
+}
+.a-3-letter::before {
+    content: url('./image/a-3.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 91.61px;
+}
+.l-3-letter::before {
+    content: url('./image/l-3.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 116.61px;
+}
+
+
+.r-4-letter::before {
+    content: url('./image/r-4.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+}
+.e-4-letter::before {
+    content: url('./image/e-4.png');
+    position: absolute;
+    top: 55%;
+    transform: translate(-0px, -50%);
+    left: 20px;
+}
+.v-4-letter::before {
+    content: url('./image/v-4.png');
+    position: absolute;
+    top: 55%;
+    transform: translate(-0px, -50%);
+    left: 40px;
+}
+.o-4-letter::before {
+    content: url('./image/o-4.png');
+    position: absolute;
+    top: 55%;
+    transform: translate(-0px, -50%);
+    left: 60px;
+}
+.l-4-letter::before {
+    content: url('./image/l-4.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 82px;
+}
+.u-4-letter::before {
+    content: url('./image/u-4.png');
+    position: absolute;
+    top: 55%;
+    transform: translate(-0px, -50%);
+    left: 92px;
+}
+.t-4-letter::before {
+    content: url('./image/t-4.png');
+    position: absolute;
+    top: 52%;
+    transform: translate(-0px, -50%);
+    left: 113px;
+}
+
+
+.icon-five {
+    content: url('./image/icon-five.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    height: 55px;
+    width: 145px;
+}
+
+
+.d-6-letter::before {
+    content: url('./image/d-6.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+}
+.a-6-letter::before {
+    content: url('./image/a-6.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 20px;
+}
+.i-6-letter::before {
+    content: url('./image/i-6.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 44px;
+}
+.m-6-letter::before {
+    content: url('./image/m-6.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 56px;
+}
+.l-6-letter::before {
+    content: url('./image/l-6.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 90px;
+}
+.e-6-letter::before {
+    content: url('./image/e-6.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 105px;
+}
+.r-6-letter::before {
+    content: url('./image/r-6.png');
+    position: absolute;
+    top: 50%;
+    transform: translate(-0px, -50%);
+    left: 123px;
+}
+
+
+
+
+
 
